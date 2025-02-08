@@ -142,7 +142,7 @@
                             </ul>
                         </div>
                     </li>
-                    <?php if ($user[0]->id_role_struktur == 7 || $user[0]->id_role_struktur == 5) {?>
+                    <?php if ($user[0]->id_role_struktur == 7 || $user[0]->id_role_struktur == 5 || $user[0]->id_role_struktur == 10) {?>
                     <li class="menu-item menu-item-submenu menu-item-rel <?php echo @$nav_save; ?>"
                         data-menu-toggle="click" aria-haspopup="true">
                         <a href="javascript:;" class="menu-link menu-toggle">
@@ -310,12 +310,12 @@
                                                 </a>
                                             </li>
                                             <li class="menu-item" aria-haspopup="true">
-                                                <a href="<?php echo site_url("/finance/savings/saving_tour_transaction_employee") ?>"
+                                                <a href="<?php echo site_url("/finance/savings/saving_tht_transaction_employee") ?>"
                                                     class="menu-link">
                                                     <i class="menu-bullet menu-bullet-dot">
                                                         <span></span>
                                                     </i>
-                                                    <span class="menu-text">Setor & Tarik Tabungan Wisata</span>
+                                                    <span class="menu-text">Setor & Tarik Tabungan THT</span>
                                                 </a>
                                             </li>
                                             <?php }?>
@@ -421,16 +421,16 @@
                                                     <i class="menu-bullet menu-bullet-dot">
                                                         <span></span>
                                                     </i>
-                                                    <span class="menu-text">Tambah Nasabah</span>
+                                                    <span class="menu-text">Tambah Debitur</span>
                                                 </a>
                                             </li>
                                             <li class="menu-item" aria-haspopup="true">
-                                                <a href="<?php echo site_url("/finance/savings/list_personal_saving") ?>"
+                                                <a href="<?php echo site_url("/finance/debts/list_employee_debt") ?>"
                                                     class="menu-link">
                                                     <i class="menu-bullet menu-bullet-dot">
                                                         <span></span>
                                                     </i>
-                                                    <span class="menu-text">Daftar Nasabah</span>
+                                                    <span class="menu-text">Daftar Debitur</span>
                                                 </a>
                                             </li>
                                             <li class="menu-item" aria-haspopup="true">
@@ -439,7 +439,7 @@
                                                     <i class="menu-bullet menu-bullet-dot">
                                                         <span></span>
                                                     </i>
-                                                    <span class="menu-text">Insight Tabungan</span>
+                                                    <span class="menu-text">Insight Hutang</span>
                                                 </a>
                                             </li>
                                             <li class="menu-item" aria-haspopup="true">
